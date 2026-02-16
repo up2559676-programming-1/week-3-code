@@ -1,5 +1,4 @@
-from graphix import Window, Point, Circle, Line, Rectangle, \
-                    Polygon, Text, Entry
+from graphix import Window, Point, Circle, Line, Text
 
 
 def hello_graphix():
@@ -14,6 +13,14 @@ def draw_stick_figure():
     head.draw(win)
     body = Line(Point(200, 160), Point(200, 240))
     body.draw(win)
+    arms = Line(Point(150, 180), Point(250, 180))
+    arms.draw(win)
+    right_leg = Line(Point(200, 240), Point(250, 300))
+    right_leg.draw(win)
+    left_leg = Line(Point(200, 240), Point(150, 300))
+    left_leg.draw(win)
+
+    win.get_mouse()
 
 
 def draw_line():
